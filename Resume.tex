@@ -1,0 +1,129 @@
+\documentclass[10pt]{article}
+\usepackage[top=1cm, left=1.25cm, right=1.25cm, bottom=1cm]{geometry}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{array}
+
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\pagestyle{empty}
+\title{Matthew J. Barichello}
+\date{August 21, 2018}
+\author{Matthew J. Barichello}
+
+\begin{document}
+    \normalfont
+    % define the color of the lines
+    \definecolor{maroon}{rgb}{0.34, 0.01, 0.1}
+    % header
+    \begin{table}[ht]
+        \begin{tabular}{p{13cm}r}
+            \multirow{4}{*}{\hspace*{1cm}\color{maroon}{\huge\textbf{Matthew J. Barichello}}} & (226) 787-3330\\
+            & \href{mailto:matthewjbarichello@gmail.com}{matthewjbarichello@gmail.com}\\
+            & \href{http://nogenerics.info}{https://nogenerics.info}\\
+            & \href{https://github.com/Matthewacon}{https://github.com/Matthewacon}\\
+        \end{tabular}
+        \begin{tabular}{@{\hspace{0mm}}c@{\hspace{1mm}}c@{\hspace{3mm}}cl}
+            %EXPERIENCE
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            & & & \large{\textbf{Experience}}\\[-2mm]
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            February & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Programming and Computer Science Tutoring}, \textit{Assumption College High School}\\
+            2018 & & &\\
+            \vspace*{-8mm}\\
+            & & & $\bullet$ Private online Java programming tutoring during weekdays after school\\
+            & & & $\bullet$ In-class Java programming and computer science conceptual tutoring\\
+            \vspace*{-3mm}\\
+            September & \multirow{2}{*}{-} & June & \textbf{Programming and Electrical Engineering Mentor}, \textit{Assumption Robotics Club}\\
+            2015 & & 2017 &\\
+            \vspace*{-8mm}\\
+            & & & $\bullet$ Taught and mentored Java and C programming and circuit design and implementation\\
+            & & & \hspace*{3mm}in robotics\\
+            \vspace*{-3mm}\\
+            2013 & - & present & \textbf{Multi-tiered Networking and Server Deployment}, 
+            \textit{Blind Beast Servers, Home Lab}\\
+            & & &\\
+            \vspace*{-8mm}\\
+            & & & $\bullet$ Deployed fault tolerant continuous integration, git repository and DNS caching servers\\
+            & & & \hspace*{3mm}across multiple hosts in the cloud\\
+            & & & $\bullet$ Deployed a lights-out, PXE boot based, KVM cluster over 10Gbe, with redundant 1Gbe\\
+            & & & \hspace*{3mm}seamless fallback routes and isolated management NICs, utilizing mixed consumer-grade\\
+            & & & \hspace*{3mm}and industrial computing solutions\\
+            %PROJECTS
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            & & & \large{\textbf{Projects}}\\[-2mm]
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            %Philips Logic Analyzer Repair and Restoration
+            July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Logic Analyzer Repair and Restoration} - ESP8266, C++, CMake, Bash\\
+            2018 & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ Currently restoring a Philips 3585 Logic Analyzer requiring main-board component level\\
+            & & & \hspace*{3mm}repairs, power supply repairs, EEPROM re-flashing and custom hand-built logic probes\\
+            %Java compiler extension
+            July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/Matthewacon/Pal}{Pal}} - Java, C++, Groovy, Gradle, CMake\\
+            2018 & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ Created a Java compiler extension that enables meta-programming through annotations,\\
+            & & & \hspace*{3mm}while retaining full compatibility with preexisting and future JVM and JDK specifications\\
+            %MasseyHacks 4 project
+            \multicolumn{3}{c}{April 2018} & \textbf{\href{https://github.com/SpaceBodge}{Space Bodge}} - Java, Lua, JavaScript, Gradle, ESP8266, Arduino\\
+            & & & $\bullet$ Created an IoT inspired, open-source, cost-effective, and wifi-enabled game controller\\
+            & & & \hspace*{3mm}architecture backed by web sockets and scripted in Lua\\
+            %Multithreaded NBT tree walker
+            \multicolumn{3}{c}{August 2017} & \textbf{\href{https://github.com/Matthewacon/congenial-octo-enigma}{congenial-octo-enigma}} - Java, Maven, Apache Commons\\
+            & & & $\bullet$ Created a multi-threaded recursive NBT tree walker with a callback-based binary tag\\
+            & & & \hspace*{3mm}evaluator and interjection API, in Java\\
+%        \end{tabular}
+%        \begin{tabular}{@{\hspace{0mm}}c@{\hspace{1mm}}c@{\hspace{3mm}}cl}
+            %LANGUAGES AND FRAMEWORKS
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            & & & \large{\textbf{Languages \& Frameworks}}\\[-2mm]
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            \multicolumn{3}{c}{Languages} & \textbf{\texttt{Java; C; C++; Groovy; Bash; m4; \LaTeX; Python; Lua; Pascal}}\\[-1mm]
+            \multicolumn{3}{c}{Operating Systems} & \texttt{Windows; macOS; Linux (Debian \& derivatives; Red Hat \& derivatives; Arch)}\\[-1mm]
+            \multicolumn{3}{c}{Frameworks} & \texttt{Processing; OpenCL; OpenGL; Apache Commons; LUKS; Systemd; Iptables; Init; Cron}\\[-1mm]
+            \multicolumn{3}{c}{Build Tools} & \texttt{Gradle; Maven; Ant; CMake; Make; Autotools; Waf}\\[-1mm]
+            %EDUCATION
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            & & & \large{\textbf{Education}}\\[-2mm]
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            %High School
+            September & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Ontario Secondary School Diploma} \textit{Assumption College High School (ongoing)}\\[-1mm]
+            2015 & & &\\
+            \vspace*{-6.5mm}\\
+            %IB Certificate
+            & & & \textbf{International Baccalaureate Certificate} \textit{Assumption College High School (ongoing)}\\
+            \vspace*{-2.75mm}\\
+            %DMA Java Introduction
+            \multicolumn{3}{c}{July 2015} & \textbf{DMA Certificate for Advanced Java Programming} \textit{University of Toronto}\\[1mm]
+            %Grade School
+%            \multicolumn{3}{c}{June 2015} & \textbf{Ontario Primary School Diploma} \textit{St. William Elementary School}\\[1mm]
+            %COMPETITIONS
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            & & & \large{\textbf{Competitions}}\\[-2mm]
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            \multicolumn{3}{c}{September 14-16, 2018} & \textbf{Hack the North 2018}\\
+            \multicolumn{3}{c}{April 28-29, 2018} & \textbf{Massey Hacks IV}\\
+            \multicolumn{3}{c}{April 1-2, 2017} & \textbf{Massey Hacks III}\\
+            \multicolumn{3}{c}{May 21-22, 2016} & \textbf{Massey Hacks II}\\
+            %AWARDS
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            & & & \large{\textbf{Awards}}\\[-2mm]
+            & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            \multicolumn{3}{c}{2018} & \textbf{First Place Hacker}, \textit{Massey Hacks IV}\\[1mm]
+            \multicolumn{3}{c}{2018} & \textbf{Best Hardware Hack}, \textit{Massey Hacks IV}\\[1mm]
+            \multicolumn{3}{c}{2016 - 2018} & \textbf{Honour Roll}, \textit{Assumption College High School}\\[1mm]
+            \multicolumn{3}{c}{2015} & \textbf{Optimist Award}, \textit{St. William Elementary School}\\[1mm]
+            \multicolumn{3}{c}{2015} & \textbf{Science Proficiency Award}, \textit{St. William Elementary School}\\[1mm]
+            \multicolumn{3}{c}{2015} & \textbf{Academic Excellence Award}, \textit{St. William Elementary School}\\[1mm]
+%            \multicolumn{3}{c}{April \& December, 2015} & \textbf{Student of the Month}, \textit{St. William Elementary School}\\[1mm]
+        \end{tabular}
+    \end{table}
+\end{document}
+
