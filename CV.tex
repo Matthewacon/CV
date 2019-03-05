@@ -5,6 +5,8 @@
 \usepackage{hyperref}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage{verbatim}
+\usepackage{longtable}
 
 \hypersetup{
     colorlinks,
@@ -13,7 +15,7 @@
     urlcolor={blue!80!black}
 }
 \pagestyle{empty}
-\title{Matthew J. Barichello}
+\title{Curriculum Vitae}
 \date{August 21, 2018}
 \author{Matthew J. Barichello}
 
@@ -21,74 +23,121 @@
     \normalfont
     % define the color of the lines
     \definecolor{maroon}{rgb}{0.34, 0.01, 0.1}
-    % header
-    \begin{table}[ht]
-        \begin{tabular}{p{13cm}r}
-            \multirow{4}{*}{\hspace*{1cm}\color{maroon}{\huge\textbf{Matthew J. Barichello}}} & (226) 787-3330\\
-            & \href{mailto:matthewjbarichello@gmail.com}{matthewjbarichello@gmail.com}\\
-            & \href{http://nogenerics.info}{https://nogenerics.info}\\
-            & \href{https://github.com/Matthewacon}{https://github.com/Matthewacon}\\
-        \end{tabular}
+    \begin{tabular}{m{13cm} r}
+        % \multirow{2}{*}{\color{maroon}{\huge\textbf{Matthew J. Barichello}}} & (226) 787-3330\\
+        \color{maroon}{\huge\textbf{Matthew J. Barichello}} & (226) 787-3330\\
+        \multirow{2}{*}{\color{maroon}{\textsc{Systems Integrator}}} & \href{mailto:matthewjbarichello@gmail.com}{matthewjbarichello@gmail.com}\\
+        \multirow{2}{*}{\color{maroon}{\textsc{Software Developer}}} & \href{http://nogenerics.info}{https://nogenerics.info}\\
+        \multirow{2}{*}{\color{maroon}{\textsc{Electrical Engineer}}} & \href{https://github.com/Matthewacon}{https://github.com/Matthewacon}\\
+    \end{tabular}
+    % \begin{tabular}{p{13cm}r}
+    %     \multirow{4}{*}{\hspace*{1cm}\color{maroon}{\huge\textbf{Matthew J. Barichello}}} & (226) 787-3330\\
+    %     & \href{mailto:matthewjbarichello@gmail.com}{matthewjbarichello@gmail.com}\\
+    %     & \href{http://nogenerics.info}{https://nogenerics.info}\\
+    %     & \href{https://github.com/Matthewacon}{https://github.com/Matthewacon}\\
+    % \end{tabular}
+    %Header
+    \begin{longtable}{@{\extracolsep{\fill}}c c c c@{}}
         \begin{tabular}{@{\hspace{0mm}}c@{\hspace{1mm}}c@{\hspace{3mm}}cl}
             %EXPERIENCE
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Experience}}\\[-2mm]
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            %No Generics
+            December & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{No Generics (CEO)}, \textit{Belle River, Ontario}\\
+            2018 & & &\\
+            \vspace*{-8mm}\\
+            & & & $\bullet$ Scalable cloud virtualization with a 10Gbe intranet back-plane for instantaneous\\
+            & & & \hspace*{3mm}storage access\\
+            & & & $\bullet$ Game server hosting with segregated virtualization containers and isolated networking\\
+            & & & $\bullet$ Software development and electrical engineering contractor\\
+            \vspace*{-2mm}\\
+            %CS Tutoring
             February & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Programming and Computer Science Tutoring}, \textit{Assumption College High School}\\
             2018 & & &\\
             \vspace*{-8mm}\\
             & & & $\bullet$ Private online Java programming tutoring during weekdays after school\\
             & & & $\bullet$ In-class Java programming and computer science conceptual tutoring\\
-            \vspace*{-3mm}\\
+            \vspace*{-2mm}\\
+            %EE and Programming Tutoring
             September & \multirow{2}{*}{-} & June & \textbf{Programming and Electrical Engineering Mentor}, \textit{Assumption Robotics Club}\\
             2015 & & 2017 &\\
             \vspace*{-8mm}\\
             & & & $\bullet$ Taught and mentored Java and C programming and circuit design and implementation\\
             & & & \hspace*{3mm}in robotics\\
-            \vspace*{-3mm}\\
+            \vspace*{-2mm}\\
+            %BBS, Home Lab and Cloud Deployments
             2013 & - & present & \textbf{Multi-tiered Networking and Server Deployment}, 
             \textit{Blind Beast Servers, Home Lab}\\
             & & &\\
             \vspace*{-8mm}\\
             & & & $\bullet$ Deployed fault tolerant continuous integration, git repository and DNS caching servers\\
             & & & \hspace*{3mm}across multiple hosts in the cloud\\
-            & & & $\bullet$ Deployed a lights-out, PXE boot based, KVM cluster over 10Gbe, with redundant 1Gbe\\
-            & & & \hspace*{3mm}seamless fallback routes and isolated management NICs, utilizing mixed consumer-grade\\
-            & & & \hspace*{3mm}and industrial computing solutions\\
+            & & & $\bullet$ Deployed a lights-out, fully-encrypted PXE boot based KVM cluster over 10Gbe, with\\
+            & & & \hspace*{3mm}redundant 1Gbe seamless fallback routes and isolated management NICs, utilizing mixed\\
+            & & & \hspace*{3mm}consumer-grade and industrial computing solutions\\
+            \vspace{1mm}\\
             %PROJECTS
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Projects}}\\[-2mm]
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            %Fake-JNI
+            Jan & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/meme/fake-jni}{fake-jni}} - C++, CMake, JNI, JVMTI\\
+            2019 & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A C++ library for seamlessly implementing Java classes completely in native code.\\
+            & & & \hspace*{3mm}Designed specifically for removing the overhead of a running JVM instance from a linked\\
+            & & & \hspace*{3mm}native library, with minimal API boilerplate and dynamic linking support\\
+            \vspace{-2mm}\\
+            %Power-wall / UPS
+            Jan & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{18650 Hybrid Power-wall and UPS} - C++, CMake, μC, Embedded Electronics\\
+            2019 & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ Currently assembling a hybrid power-wall system from salvaged 18650 Li-Ion cells, to\\
+            & & & \hspace*{3mm}supply the company virtualization lab during peak grid usage hours, and to charge\\
+            & & & \hspace*{3mm}during off cycles in order to save on power costs. The power-wall furthermore provides\\
+            & & & \hspace*{3mm}uninterruptible power supply functionality, in the event that the grid supply becomes\\
+            & & & \hspace*{3mm}unreliable, during charging cycles\\
+            \vspace{-2mm}\\
             %Philips Logic Analyzer Repair and Restoration
             July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Logic Analyzer Repair and Restoration} - ESP8266, C++, CMake, Bash\\
             2018 & & &\\
             \vspace*{-8.5mm}\\
             & & & $\bullet$ Currently restoring a Philips 3585 Logic Analyzer requiring main-board component level\\
             & & & \hspace*{3mm}repairs, power supply repairs, EEPROM re-flashing and custom hand-built logic probes\\
+            \vspace{-2mm}\\
             %Java compiler extension
             July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/Matthewacon/Pal}{Pal}} - Java, C++, Groovy, Gradle, CMake\\
             2018 & & &\\
             \vspace*{-8.5mm}\\
             & & & $\bullet$ Created a Java compiler extension that enables meta-programming through annotations,\\
             & & & \hspace*{3mm}while retaining full compatibility with preexisting and future JVM and JDK specifications\\
-            %MasseyHacks 4 project
-            \multicolumn{3}{c}{April 2018} & \textbf{\href{https://github.com/SpaceBodge}{Space Bodge}} - Java, Lua, JavaScript, Gradle, ESP8266, Arduino\\
-            & & & $\bullet$ Created an IoT inspired, open-source, cost-effective, and wifi-enabled game controller\\
-            & & & \hspace*{3mm}architecture backed by web sockets and scripted in Lua\\
-            %Multithreaded NBT tree walker
-            \multicolumn{3}{c}{August 2017} & \textbf{\href{https://github.com/Matthewacon/congenial-octo-enigma}{congenial-octo-enigma}} - Java, Maven, Apache Commons\\
-            & & & $\bullet$ Created a multi-threaded recursive NBT tree walker with a callback-based binary tag\\
-            & & & \hspace*{3mm}evaluator and interjection API, in Java\\
-%        \end{tabular}
-%        \begin{tabular}{@{\hspace{0mm}}c@{\hspace{1mm}}c@{\hspace{3mm}}cl}
+            \begin{comment}
+                %MasseyHacks 4 project
+                \multicolumn{3}{c}{April 2018} & \textbf{\href{https://github.com/SpaceBodge}{Space Bodge}} - Java, Lua, JavaScript, Gradle, ESP8266, Arduino\\
+                & & & $\bullet$ Created an IoT inspired, open-source, cost-effective, and wifi-enabled game controller\\
+                & & & \hspace*{3mm}architecture backed by web sockets and scripted in Lua\\
+                %Multithreaded NBT tree walker
+                \multicolumn{3}{c}{August 2017} & \textbf{\href{https://github.com/Matthewacon/congenial-octo-enigma}{congenial-octo-enigma}} - Java, Maven, Apache Commons\\
+                & & & $\bullet$ Created a multi-threaded recursive NBT tree walker with a callback-based binary tag\\
+                & & & \hspace*{3mm}evaluator and interjection API, in Java\\
+            \end{comment}
+            \vspace{1mm}\\
             %LANGUAGES AND FRAMEWORKS
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Languages \& Frameworks}}\\[-2mm]
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             \multicolumn{3}{c}{Languages} & \textbf{\texttt{Java; C; C++; Groovy; Bash; m4; \LaTeX; Python; Lua; Pascal}}\\[-1mm]
+            \vspace{-0.75mm}\\
             \multicolumn{3}{c}{Operating Systems} & \texttt{Windows; macOS; Linux (Debian \& derivatives; Red Hat \& derivatives; Arch)}\\[-1mm]
-            \multicolumn{3}{c}{Frameworks} & \texttt{Processing; OpenCL; OpenGL; Apache Commons; LUKS; Systemd; Iptables; Init; Cron}\\[-1mm]
+            \vspace{-0.75mm}\\
+            \multicolumn{3}{c}{Frameworks} & \texttt{Processing; OpenCL; OpenGL; Apache Commons; Coreutils; KVM; LUKS; Systemd;}\\[-1mm]
+            \multicolumn{3}{c}{} & \texttt{IP; Iptables; Init; Cron}\\[-1mm]
+            \vspace{-0.75mm}\\
             \multicolumn{3}{c}{Build Tools} & \texttt{Gradle; Maven; Ant; CMake; Make; Autotools; Waf}\\[-1mm]
+        \end{tabular}
+        \pagebreak\\
+        \begin{tabular}{@{\hspace{0mm}}c@{\hspace{1mm}}c@{\hspace{3mm}}cl}
             %EDUCATION
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Education}}\\[-2mm]
@@ -104,15 +153,18 @@
             \multicolumn{3}{c}{July 2015} & \textbf{DMA Certificate for Advanced Java Programming} \textit{University of Toronto}\\[1mm]
             %Grade School
 %            \multicolumn{3}{c}{June 2015} & \textbf{Ontario Primary School Diploma} \textit{St. William Elementary School}\\[1mm]
+            \vspace{1mm}\\
             %COMPETITIONS
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Competitions}}\\[-2mm]
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            \multicolumn{3}{c}{March 23, 2019} & \textbf{Massey Hacks V}\\
             \multicolumn{3}{c}{December 7, 2018} & \textbf{15th Windsor Regional Secondary School Programming Competition}\\
             \multicolumn{3}{c}{September 14-16, 2018} & \textbf{Hack the North 2018}\\
             \multicolumn{3}{c}{April 28-29, 2018} & \textbf{Massey Hacks IV}\\
             \multicolumn{3}{c}{April 1-2, 2017} & \textbf{Massey Hacks III}\\
             \multicolumn{3}{c}{May 21-22, 2016} & \textbf{Massey Hacks II}\\
+            \vspace{1mm}\\
             %AWARDS
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Awards}}\\[-2mm]
@@ -126,7 +178,5 @@
             \multicolumn{3}{c}{2015} & \textbf{Academic Excellence Award}, \textit{St. William Elementary School}\\[1mm]
 %            \multicolumn{3}{c}{April \& December, 2015} & \textbf{Student of the Month}, \textit{St. William Elementary School}\\[1mm]
         \end{tabular}
-    \end{table}
+    \end{longtable}
 \end{document}
-
-
