@@ -1,1 +1,1 @@
-# [CV](https://github.com/Matthewacon/CV/blob/master/Resume.pdf)
+# [CV](https://github.com/Matthewacon/CV/blob/master/CV.pdf)
