@@ -16,7 +16,7 @@
 }
 \pagestyle{empty}
 \title{Curriculum Vitae}
-\date{August 23, 2019}
+\date{September 25, 2019}
 \author{Matthew J. Barichello}
 
 \begin{document}
@@ -28,7 +28,7 @@
         \color{maroon}{\huge\textbf{Matthew J. Barichello}} & (226) 787-3330\\
         \multirow{2}{*}{\color{maroon}{\textsc{Systems Integrator}}} & \href{mailto:matthewjbarichello@gmail.com}{matthewjbarichello@gmail.com}\\
         \multirow{2}{*}{\color{maroon}{\textsc{Software Developer}}} & \href{http://nogenerics.info}{https://nogenerics.info}\\
-        \multirow{2}{*}{\color{maroon}{\textsc{Electrical Engineer}}} & \href{https://github.com/Matthewacon}{https://github.com/Matthewacon}\\
+        \multirow{2}{*}{\color{maroon}{\textsc{Electrical Designer}}} & \href{https://github.com/Matthewacon}{https://github.com/Matthewacon}\\
         \multirow{2}{*}{} & \href{https://www.linkedin.com/in/matthew-barichello/}{https://www.linkedin.com/in/matthew-barichello}\\
     \end{tabular}
     % \begin{tabular}{p{13cm}r}
@@ -48,38 +48,38 @@
             May & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Optimotive Technologies (Contractor)}, \textit{Windsor, Ontario}\\
             2019 & & &\\
             \vspace*{-8mm}\\
-            & & & $\bullet$ Contractor for electrical engineering and software development.\\
+            & & & $\bullet$ Contractor for electrical design and software development.\\
             \vspace*{-2mm}\\
             %No Generics
             December & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{No Generics Ltd. (CEO)}, \textit{Belle River, Ontario}\\
             2018 & & &\\
             \vspace*{-8mm}\\
-            & & & $\bullet$ Scalable cloud virtualization with a 10Gbe intranet back-plane for instantaneous\\
+            & & & $\bullet$ Scalable cloud virtualization with a 10Gbe intranet back-plane for high-throughput\\
             & & & \hspace*{3mm}storage access\\
             & & & $\bullet$ Game server hosting with segregated virtualization containers and isolated networking\\
-            & & & $\bullet$ Software development and electrical engineering contractor\\
+            & & & $\bullet$ Software development and electrical design contractor\\
             \vspace*{-2mm}\\
             %CS Tutoring
-            February & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Programming and Computer Science Tutoring}, \textit{Assumption College High School}\\
-            2018 & & &\\
+            February & \multirow{2}{*}{-} & June & \textbf{Programming and Computer Science Tutoring}, \textit{Assumption College High School}\\
+            2018 & & 2019 &\\
             \vspace*{-8mm}\\
             & & & $\bullet$ Private online Java programming tutoring during weekdays after school\\
             & & & $\bullet$ In-class Java programming and computer science conceptual tutoring\\
             \vspace*{-2mm}\\
             %EE and Programming Tutoring
-            September & \multirow{2}{*}{-} & June & \textbf{Programming and Electrical Engineering Mentor}, \textit{Assumption Robotics Club}\\
+            September & \multirow{2}{*}{-} & June & \textbf{Programming and Electrical Design Mentor}, \textit{Assumption Robotics Club}\\
             2015 & & 2017 &\\
             \vspace*{-8mm}\\
-            & & & $\bullet$ Taught and mentored Java and C programming and circuit design and implementation\\
-            & & & \hspace*{3mm}in robotics\\
+            & & & $\bullet$ Taught and mentored Java and C programming as well as circuit design and\\
+            & & & \hspace*{3mm}implementation in robotics\\
             \vspace*{-2mm}\\
             %BBS, Home Lab and Cloud Deployments
             \multirow{2}{*}{2013} & \multirow{2}{*}{-} & March & \textbf{Multi-tiered Networking and Server Deployment}, 
             \textit{Blind Beast Servers, Home Lab}\\
             & & 2019 & \\
             \vspace*{-8mm}\\
-            & & & $\bullet$ Deployed fault tolerant continuous integration, git repository and DNS caching servers\\
-            & & & \hspace*{3mm}across multiple hosts in the cloud\\
+            & & & $\bullet$ Deployed fault tolerant continuous integration service, git repository and DNS caching \\
+            & & & \hspace*{3mm}service, across multiple hosts in the cloud\\
             & & & $\bullet$ Deployed a lights-out, fully-encrypted PXE boot based KVM cluster over 10Gbe, with\\
             & & & \hspace*{3mm}redundant 1Gbe seamless fallback routes and isolated management NICs, utilizing mixed\\
             & & & \hspace*{3mm}consumer-grade and industrial computing solutions\\
@@ -88,39 +88,71 @@
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Projects}}\\[-2mm]
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
-            %cx-mat
-            %CX
-            %Fake-JNI
-            Jan & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/meme/fake-jni/tree/rewrite}{fake-jni}} - C++, CMake, JNI, JVMTI\\
+            %baron
+            September & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/dukeify/baron}{baron}} - C, C++, CMake, JNI, JVMTI\\
             2019 & & &\\
             \vspace*{-8.5mm}\\
-            & & & $\bullet$ A C++ library for seamlessly implementing Java classes completely in native code.\\
+            & & & $\bullet$ A reverse engineering framework built on top of \href{https://github.com/dukeify/fake-jni}{fake-jni} designed to streamline the\\
+            & & & \hspace{3mm}disassembly process by interacting with black-box JNI modules and JVMTI agents.\\
+            \vspace{-2mm}\\
+            %cx-mat
+            August & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/Matthewacon/cx-mat}{cx-mat}} - C++, CMake\\
+            2019 & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A portable constexpr-compatible linear algebra library built with both vertical and\\
+            & & & \hspace{3mm}horizontal scalability in mind. cx-mat exposes a high-level template interface allowing\\
+            & & & \hspace{3mm}for stream-like operation composition, which decomposes to any number of backends,\\
+            & & & \hspace{3mm}supported by both OpenGL and OpenCL.\\
+            \vspace{-2mm}\\
+            %jda
+            April & \multirow{2}{*}{-} & August & \textbf{\href{https://github.com/mcdh/jda}{jda}} - Kotlin, Groovy, Gradle\\
+            2019 & & 2019 &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A simple adapter library that exposes an interface for JetBrains' proprietary\\
+            & & & \hspace*{3mm}implementation of the Fernflower Java decompiler.\\
+            \vspace{-2mm}\\
+            %CX
+            February & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/matthewacon/CX}{CX}} - C++, CMake\\
+            2019 & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A collection of platform-agnostic constant expression tools, template meta-functions and\\
+            & & & \hspace*{3mm}detection idioms. Provides support for compile-time string manipulation, compile-time\\
+            & & & \hspace*{3mm}reflection, compile-time variadic tuple construction and manipulation, and much more.\\
+            \vspace{-2mm}\\
+            %fake-jni
+            January & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/dukeify/fake-jni}{fake-jni}} - C++, CMake, JNI, JVMTI\\
+            2019 & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A portable C++ library for seamlessly implementing Java classes completely in native code.\\
             & & & \hspace*{3mm}Designed specifically for removing the overhead of a running JVM instance from a JNI\\
             & & & \hspace*{3mm}native library, with minimal API boilerplate and dynamic linking support\\
             \vspace{-2mm}\\
-            %Power-wall / UPS
-            Jan & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{18650 Hybrid Power-wall and UPS} - C++, CMake, μC, Embedded Electronics\\
-            2019 & & &\\
-            \vspace*{-8.5mm}\\
-            & & & $\bullet$ Currently assembling a hybrid power-wall system from salvaged 18650 Li-Ion cells, to\\
-            & & & \hspace*{3mm}supply the company virtualization lab during peak grid usage hours, and to charge\\
-            & & & \hspace*{3mm}during off cycles in order to save on power costs. The power-wall furthermore provides\\
-            & & & \hspace*{3mm}uninterruptible power supply functionality, in the event that the grid supply becomes\\
-            & & & \hspace*{3mm}unreliable.\\
-            \vspace{-2mm}\\
-            %Philips Logic Analyzer Repair and Restoration
-            July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Logic Analyzer Repair and Restoration} - ESP8266, C++, CMake, Bash\\
-            2018 & & &\\
-            \vspace*{-8.5mm}\\
-            & & & $\bullet$ Currently restoring a Philips 3585 Logic Analyzer requiring main-board component level\\
-            & & & \hspace*{3mm}repairs, power supply repairs, EEPROM re-flashing and custom hand-built logic probes\\
-            \vspace{-2mm}\\
+            \begin{comment}
+                %Power-wall / UPS
+                Jan & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{18650 Hybrid Power-wall and UPS} - C++, CMake, μC, Embedded Electronics\\
+                2019 & & &\\
+                \vspace*{-8.5mm}\\
+                & & & $\bullet$ Currently assembling a hybrid power-wall system from salvaged 18650 Li-Ion cells, to\\
+                & & & \hspace*{3mm}supply the company virtualization lab during peak grid usage hours, and to charge\\
+                & & & \hspace*{3mm}during off cycles in order to save on power costs. The power-wall furthermore provides\\
+                & & & \hspace*{3mm}uninterruptible power supply functionality, in the event that the grid supply becomes\\
+                & & & \hspace*{3mm}unreliable.\\
+                \vspace{-2mm}\\
+                %Philips Logic Analyzer Repair and Restoration
+                July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{Logic Analyzer Repair and Restoration} - ESP8266, C++, CMake, Bash\\
+                2018 & & &\\
+                \vspace*{-8.5mm}\\
+                & & & $\bullet$ Currently restoring a Philips 3585 Logic Analyzer requiring main-board component level\\
+                & & & \hspace*{3mm}repairs, power supply repairs, EEPROM re-flashing and custom hand-built logic probes\\
+                \vspace{-2mm}\\
+            \end{comment}
             %Java compiler extension
             July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/Matthewacon/Pal}{Pal}} - Java, C++, Groovy, Gradle, CMake\\
             2018 & & &\\
             \vspace*{-8.5mm}\\
-            & & & $\bullet$ Created a Java compiler extension that enables meta-programming through annotations,\\
-            & & & \hspace*{3mm}while retaining full compatibility with preexisting and future JVM and JDK specifications\\
+            & & & $\bullet$ A Java compiler extension that enables meta-programming and bytecode instrumentation\\
+            & & & \hspace*{3mm}through annotations, while retaining full compatibility with preexisting and future JVM\\
+            & & & \hspace*{3mm}and JDK specifications.\\
             \begin{comment}
                 %MasseyHacks 4 project
                 \multicolumn{3}{c}{April 2018} & \textbf{\href{https://github.com/SpaceBodge}{Space Bodge}} - Java, Lua, JavaScript, Gradle, ESP8266, Arduino\\
@@ -143,7 +175,7 @@
             \multicolumn{3}{c}{Operating Systems} & \texttt{Windows; macOS; Linux (Debian \& derivatives; Red Hat \& derivatives; Arch)}\\[-1mm]
             \vspace{-0.75mm}\\
             \multicolumn{3}{c}{\multirow{2}{*}{Frameworks}} & \texttt{OpenCL; OpenGL; Apache Commons; Processing; JNI; Coreutils; KVM; QEMU; LUKS;}\\[-1mm]
-            \multicolumn{3}{c}{} & \texttt{Systemd; Init; Cron; iproute2; iptables}\\[-1mm]
+            \multicolumn{3}{c}{} & \texttt{Systemd; Init; Cron; iproute2; iptables; docker}\\[-1mm]
             \vspace{-0.75mm}\\
             \multicolumn{3}{c}{Build Tools} & \texttt{Gradle; Maven; Ant; CMake; GNU/Make; Autotools; Waf}\\[-1mm]
             \vspace{1mm}\\
@@ -188,7 +220,7 @@
             \multicolumn{3}{c}{2018} & \textbf{First Place Hacker}, \textit{Massey Hacks IV}\\[1mm]
             \multicolumn{3}{c}{2018} & \textbf{Best Hardware Hack}, \textit{Massey Hacks IV}\\[1mm]
             \multicolumn{3}{c}{2016 - 2019} & \textbf{Honour Roll}, \textit{Assumption College High School}\\[1mm]
-            % \multicolumn{3}{c}{2015} & \textbf{Optimist Award}, \textit{St. William Elementary School}\\[1mm]
+            \multicolumn{3}{c}{2015} & \textbf{Optimist Award}, \textit{St. William Elementary School}\\[1mm]
             \multicolumn{3}{c}{2015} & \textbf{Science Proficiency Award}, \textit{St. William Elementary School}\\[1mm]
             \multicolumn{3}{c}{2015} & \textbf{Academic Excellence Award}, \textit{St. William Elementary School}\\[1mm]
 %            \multicolumn{3}{c}{April \& December, 2015} & \textbf{Student of the Month}, \textit{St. William Elementary School}\\[1mm]
