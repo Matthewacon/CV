@@ -115,7 +115,6 @@
             & & & \hspace*{3mm}consumer-grade and industrial computing solutions\\
             \vspace{1mm}\\
         \end{tabular}\\
-        \pagebreak\\
         \begin{tabular}{@{\hspace{0mm}}c@{\hspace{1mm}}c@{\hspace{3mm}}cl}
             %LANGUAGES AND FRAMEWORKS
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
@@ -130,7 +129,7 @@
             \vspace{-0.75mm}\\
             \multicolumn{3}{c}{IaC} & \texttt{HCL Terraform; Chef; AWS CDK}\\[-1mm]
             \vspace{-0.75mm}\\
-            \multicolumn{3}{c}{Languages} & \textbf{\texttt{C++; C; Java; Kotlin; Groovy; TypeScript; JavaScript; Go; Bash; m4; \LaTeX;}}\\[-1mm]
+            \multicolumn{3}{c}{Languages} & \textbf{\texttt{C++; C; Go; Java; Kotlin; Groovy; TypeScript; JavaScript; Bash; m4; \LaTeX;}}\\[-1mm]
             \multicolumn{3}{c}{} & \texttt{Rust; Python; Lua; Pascal}\\[-1mm]
             \vspace{-0.75mm}\\
             \multicolumn{3}{c}{Operating Systems} & \texttt{Windows; macOS; Linux (Debian \& derivatives; Red Hat \& derivatives; Arch)}\\[-1mm]
@@ -163,12 +162,49 @@
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             & & & \large{\textbf{Projects}}\\[-2mm]
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
+            %go-figure
+            January & \multirow{2}{*}{-} & January & \textbf{\href{https://github.com/Matthewacon/go-figure}{go-figure}} \textit{(Sensibill)} - Golang\\
+            2020 & & 2020 &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A runtime micro-service configuration bus designed to allow for zero-downtime\\
+            & & & \hspace{3mm}configuration changes in critical and production environments. Supports both\\
+            & & & \hspace{3mm}synchronous and asynchronous configuration busses.\\
+            \vspace{-2mm}\\
+            %go-locals
+            & & & \textbf{\color{maroon}go-locals} \textit{(Sensibill)} - Golang\\
+            & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A goroutine identification and threadlocal library.\\
+            \vspace{-2mm}\\
+            %roam
+            & & & \textbf{\color{maroon}roam} \textit{(Sensibill)} - Golang\\
+            & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A much faster alternative Golang static reflection runtime. Addresses issues in\\
+            & & & \hspace{3mm}the default Golang reflection runtime that causes reflective access operations\\
+            & & & \hspace{3mm}to take several orders of magnitude longer than they should.\\
+            \vspace{-2mm}\\
+            %gomains
+            & & & \textbf{\color{maroon}gomains} \textit{(Sensibill)} - Golang\\
+            & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A lightweight and fast runtime struct serialization and deserialization framework,\\
+            & & & \hspace{3mm}built on \textbf{roam}.\\
+            \vspace{-2mm}\\
+            %gas
+            & & & \textbf{\href{https://github.com/Matthewacon/gas}{gas}} \textit{(Sensibill)} - Golang\\
+            & & &\\
+            \vspace*{-8.5mm}\\
+            & & & $\bullet$ A simple runtime assertion library designed with safety and traceability in mind.\\
+            & & & \hspace{3mm}Gas provides constructs to prevent and deal with erroneous use of API boundaries,\\
+            & & & \hspace{3mm}for both fatal and non-fatal failures.\\
+            \vspace{-2mm}\\
             %baron
             September & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/dukeify/baron}{baron}} - C, C++, CMake, JNI, JVMTI\\
             2019 & & &\\
             \vspace*{-8.5mm}\\
-            & & & $\bullet$ A reverse engineering framework built on top of \href{https://github.com/dukeify/fake-jni}{fake-jni} designed to streamline the\\
-            & & & \hspace{3mm}disassembly process by interacting with black-box JNI modules and JVMTI agents.\\
+            & & & $\bullet$ A reverse engineering framework built on top of \href{https://github.com/dukeify/fake-jni}{fake-jni} designed to be a mostly\\
+            & & & \hspace{3mm}automatic black-box JNI module and JVMTI agent runtime disassembler.\\
             \vspace{-2mm}\\
             %cx-mat
             \begin{comment}\\
@@ -181,29 +217,30 @@
                 & & & \hspace{3mm}for stream-like operation composition, which decomposes to any number of backends,\\
                 & & & \hspace{3mm}supported by both OpenGL and OpenCL.\\
                 \vspace{-2mm}\\
-            \end{comment}\\
-            %jda
-            April & \multirow{2}{*}{-} & August & \textbf{\href{https://github.com/mcdh/jda}{jda}} - Kotlin, Groovy, Gradle\\
-            2019 & & 2019 &\\
-            \vspace*{-8.5mm}\\
-            & & & $\bullet$ A simple adapter library that exposes an interface for JetBrains' proprietary\\
-            & & & \hspace*{3mm}implementation of the Fernflower Java decompiler.\\
-            \vspace{-2mm}\\
+                %jda
+                April & \multirow{2}{*}{-} & August & \textbf{\href{https://github.com/mcdh/jda}{jda}} - Kotlin, Groovy, Gradle\\
+                2019 & & 2019 &\\
+                \vspace*{-8.5mm}\\
+                & & & $\bullet$ A thread-safe adapter library that exposes an interface for JetBrains' proprietary\\
+                & & & \hspace*{3mm}implementation of the Fernflower Java decompiler.\\
+                \vspace{-2mm}\\
+            \end{comment}
             %CX
             February & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/matthewacon/CX}{CX}} - C++, CMake\\
             2019 & & &\\
             \vspace*{-8.5mm}\\
-            & & & $\bullet$ A collection of platform-agnostic constant expression tools, template meta-functions and\\
-            & & & \hspace*{3mm}detection idioms. Provides support for compile-time string manipulation, compile-time\\
-            & & & \hspace*{3mm}reflection, compile-time variadic tuple construction and manipulation, and much more.\\
+            & & & $\bullet$ A header-only, stl and libc independent, C++20 concepts, template meta-function and\\
+            & & & \hspace*{3mm}runtime utility library. Features include advanced compile-time traits, zero-allocation\\
+            & & & \hspace*{3mm}generic runtime closures, deferral and error handling mechanisms, and much more.\\
             \vspace{-2mm}\\
             %fake-jni
-            January & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/dukeify/fake-jni}{fake-jni}} - C++, CMake, JNI, JVMTI\\
+            January & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/dukeify/fake-jni}{fake-jni}} - C, C++, CMake, JNI, JVMTI\\
             2019 & & &\\
             \vspace*{-8.5mm}\\
-            & & & $\bullet$ A portable C++ library for seamlessly implementing Java classes completely in native code.\\
-            & & & \hspace*{3mm}Designed specifically for removing the overhead of a running JVM instance from a JNI\\
-            & & & \hspace*{3mm}native library, with minimal API boilerplate and dynamic linking support\\
+            & & & $\bullet$ A JNI and JVMTI instrumentation and interposition framework. Features include\\
+            & & & \hspace*{3mm}platform agnosticism, JNI-header agnosticism, a high-level JNI and JVMTI interposition\\
+            & & & \hspace*{3mm}API, seamless native class and function definitions, advanced JNI and JVMTI API\\
+            & & & \hspace*{3mm}boundary profiling and much more.\\
             \vspace{-2mm}\\
             \begin{comment}
                 %Power-wall / UPS
@@ -224,14 +261,14 @@
                 & & & \hspace*{3mm}repairs, power supply repairs, EEPROM re-flashing and custom hand-built logic probes\\
                 \vspace{-2mm}\\
             \end{comment}
-            %Java compiler extension
-            July & \multirow{2}{*}{-} & \multirow{2}{*}{present} & \textbf{\href{https://github.com/Matthewacon/Pal}{Pal}} - Java, C++, Groovy, Gradle, CMake\\
-            2018 & & &\\
-            \vspace*{-8.5mm}\\
-            & & & $\bullet$ A Java compiler extension that enables meta-programming and bytecode instrumentation\\
-            & & & \hspace*{3mm}through annotations, while retaining full compatibility with preexisting and future JVM\\
-            & & & \hspace*{3mm}and JDK specifications.\\
             \begin{comment}
+                %Java compiler extension
+                July & \multirow{2}{*}{-} & December & \textbf{\href{https://github.com/Matthewacon/Pal}{Pal}} - Java, C++, Groovy, Gradle, CMake\\
+                2018 & & 2018 &\\
+                \vspace*{-8.5mm}\\
+                & & & $\bullet$ A Java compiler extension that enables meta-programming and bytecode instrumentation\\
+                & & & \hspace*{3mm}through annotations, while retaining full compatibility with preexisting and future JVM\\
+                & & & \hspace*{3mm}and JDK specifications.\\
                 %MasseyHacks 4 project
                 \multicolumn{3}{c}{April 2018} & \textbf{\href{https://github.com/SpaceBodge}{Space Bodge}} - Java, Lua, JavaScript, Gradle, ESP8266, Arduino\\
                 & & & $\bullet$ Created an IoT inspired, open-source, cost-effective, and wifi-enabled game controller\\
@@ -250,10 +287,10 @@
             & & & \large{\textbf{Competitions}}\\[-2mm]
             & & & \color{maroon}{\rule{14cm}{0.75pt}}\\
             \multicolumn{3}{c}{March 22-23, 2019} & \textbf{Massey Hacks V}\\
-%            \multicolumn{3}{c}{January 21, 2019} & \textbf{Woburn Challenge Online Round 3}\\
+            \multicolumn{3}{c}{February 1, 2019} & \textbf{Woburn Challenge Online Round 3}\\
+            \multicolumn{3}{c}{December 14, 2018} & \textbf{Woburn Challenge Online Round 2}\\
             \multicolumn{3}{c}{December 7, 2018} & \textbf{15th Windsor Regional Secondary School Programming Competition}\\
-%            \multicolumn{3}{c}{November 29, 2018} & \textbf{Woburn Challenge Online Round 2}\\
-%            \multicolumn{3}{c}{October 29, 2018} & \textbf{Woburn Challenge Online Round 1}\\
+            \multicolumn{3}{c}{November 16, 2018} & \textbf{Woburn Challenge Online Round 1}\\
             \multicolumn{3}{c}{September 14-16, 2018} & \textbf{Hack the North 2018}\\
             \multicolumn{3}{c}{April 28-29, 2018} & \textbf{Massey Hacks IV}\\
             \multicolumn{3}{c}{April 1-2, 2017} & \textbf{Massey Hacks III}\\
