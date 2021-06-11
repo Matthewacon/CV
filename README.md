@@ -1,4 +1,4 @@
-# [CV](https://github.com/Matthewacon/CV/blob/master/CV.pdf)
+# [CV](https://github.com/Matthewacon/CV/blob/master/cv/default.pdf)
 
 ## Breakdown
 There are multiple CVs in this repository, curated toward specific skillsets
